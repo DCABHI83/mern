@@ -1,0 +1,38 @@
+.admin-container {
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #1a1a1a; /* Dark background */
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem 3rem;
+    padding-top: 3rem;
+    /* background-color: #2d2d2d; Dark content background */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    color: #e0e0e0; /* Light text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .admin-content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+}

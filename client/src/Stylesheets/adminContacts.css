@@ -1,0 +1,244 @@
+.adminContact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  color: #f7fafc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4a5568;
+}
+
+.admin-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #f7fafc;
+}
+
+.contacts-count {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  color: #cbd5e0;
+}
+
+.contacts-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.contact-card {
+  background: #2d3748;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid #4a5568;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+  border-color: #63b3ed;
+  background: #374151;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #4a5568;
+}
+
+.contact-name {
+  margin: 0;
+  color: #f7fafc;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.contact-badge {
+  background: linear-gradient(135deg, #4299e1, #63b3ed);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-email {
+  color: #63b3ed;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+
+.contact-message {
+  background: #1a202c;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #4299e1;
+  border: 1px solid #4a5568;
+}
+
+.contact-message strong {
+  color: #e2e8f0;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact-message p {
+  margin: 8px 0 0 0;
+  color: #cbd5e0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-del {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-reply {
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: white;
+}
+
+.btn-reply:hover {
+  background: linear-gradient(135deg, #38a169, #2f855a);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #f56565, #e53e3e);
+  color: white;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #e53e3e, #c53030);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.no-contacts {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: #2d3748;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid #4a5568;
+}
+
+.no-contacts h3 {
+  color: #f7fafc;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.no-contacts p {
+  color: #a0aec0;
+  margin: 0;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.2rem;
+  color: #63b3ed;
+  background: #2d3748;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #63b3ed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contacts-data {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .contact-actions {
+    flex-direction: column;
+  }
+}
+
+/* Additional dark theme utilities */
+.admin-stats {
+  background: #2d3748;
+  border: 1px solid #4a5568;
+}
+
+.search-bar {
+  background: #2d3748;
+  border: 1px solid #4a5568;
+  color: #e2e8f0;
+}
+
+.search-bar::placeholder {
+  color: #a0aec0;
+}

@@ -1,0 +1,183 @@
+.user-container {
+  width: 100%;
+  color: #e0e0e0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%; /* Ensure full width usage */
+}
+
+.user-container h2 {
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 0; /* Removed left padding */
+  text-align: center; /* Center the heading */
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+.error {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #ff6b6b;
+  margin: 1rem 0; /* Changed margin */
+}
+
+/* Table Styles - Full Width */
+table {
+  width: 100%; /* Full width */
+  min-width: 100%; /* Ensure minimum full width */
+  border-collapse: collapse;
+  background: transparent;
+  color: #e0e0e0;
+  margin: 1rem 0; /* Center margins */
+  table-layout: fixed; /* Fixed layout for consistent column widths */
+}
+
+/* Column width distribution */
+thead th:nth-child(1) { width: 20%; } /* Name */
+thead th:nth-child(2) { width: 25%; } /* Email */
+thead th:nth-child(3) { width: 15%; } /* Phone */
+thead th:nth-child(4) { width: 10%; } /* Admin */
+thead th:nth-child(5) { width: 15%; } /* Update */
+thead th:nth-child(6) { width: 15%; } /* Delete */
+
+thead {
+  background: transparent;
+  border-bottom: 2px solid #404040;
+}
+
+thead th {
+  padding: 1.5rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid #333333;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  padding: 1.2rem 1rem;
+  color: #e0e0e0;
+  font-size: 1rem;
+  vertical-align: middle;
+  word-wrap: break-word; /* Handle long content */
+  overflow: hidden;
+}
+
+/* Button Styles - Minimal Dark Theme */
+.btn-edit, .btn-delete {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+  background: transparent;
+  width: 100%; /* Make buttons fill their cells */
+  max-width: 80px; /* But limit maximum width */
+}
+
+.btn-edit {
+  color: #64b5f6;
+  border-color: #64b5f6;
+}
+
+.btn-edit:hover {
+  background: rgba(100, 181, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-delete {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.btn-delete:hover {
+  background: rgba(255, 107, 107, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Admin Status Styling */
+tbody td:nth-child(4) {
+  font-weight: 600;
+  text-align: center;
+}
+
+.admin-yes {
+  color: #4caf50 !important;
+}
+
+.admin-no {
+  color: #757575 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-container {
+    padding: 0;
+  }
+  
+  .user-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  table {
+    font-size: 0.9rem;
+    min-width: 100%;
+  }
+  
+  thead th, tbody td {
+    padding: 1rem 0.5rem;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    margin: 2px;
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  thead th, tbody td {
+    padding: 0.8rem 0.3rem;
+  }
+  
+  .user-container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 4px 6px;
+    font-size: 0.7rem;
+    max-width: 50px;
+  }
+}
