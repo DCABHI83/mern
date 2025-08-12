@@ -59,7 +59,7 @@ useEffect(()=>{
   fetchData()
 },[])
 
-  return <Authcontext.Provider value={{storeTokenLocally,LogoutUser,isLoggedIn,user,servicedata,authorizationToken}}>{children}</Authcontext.Provider>
+  return <Authcontext.Provider value={{storeTokenLocally,LogoutUser,isLoggedIn,user,servicedata,authorizationToken,token}}>{children}</Authcontext.Provider>
 }
 
 export const useAuth = ()=>{

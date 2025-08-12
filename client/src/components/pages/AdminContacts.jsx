@@ -51,7 +51,7 @@ const AdminContacts = () => {
         }
       })
       if(res.ok){
-        toast.success("user deleted successfully")
+        toast.success("message deleted successfully")
         fetchData()
       }
   } catch (error) {
