@@ -33,32 +33,32 @@ const About = () => {
         </div>
         </div>
 
-            <div className="stats-container">
-          <div className="registered">
-            <div className="text">
-              <h1>50+</h1>
-              <p>Registered Companies</p>
+            <div className="stat-container">
+          <div className="about-registered">
+            <div className="about-text">
+              <h1 style={{color:'black'}}>50+</h1>
+              <p style={{color:'black'}}>Registered Companies</p>
             </div>
-            <div className="line"></div>
+            <div className="about-line"></div>
           </div>
-          <div className="registered">
-            <div className="text">
-              <h1>150+</h1>
-              <p>Project Done</p>
+          <div className="about-registered">
+            <div className="about-text">
+              <h1 style={{color:'black'}}>150+</h1>
+              <p style={{color:'black'}}>Project Done</p>
             </div>
-            <div className="line"></div>
+            <div className="about-line"></div>
           </div>
-          <div className="registered">
-            <div className="text">
-              <h1>250+</h1>
-              <p>Happy Clients</p>
+          <div className="about-registered">
+            <div className="about-text">
+              <h1 style={{color:'black'}}>250+</h1>
+              <p style={{color:'black'}}>Happy Clients</p>
             </div>
-            <div className="line"></div>
+            <div className="about-line"></div>
           </div>
-          <div className="registered">
-            <div className="text">
-              <h1>650k+</h1>
-              <p>Youtube Subscribers</p>
+          <div className="about-registered">
+            <div className="about-text">
+              <h1 style={{color:'black'}}>650k+</h1>
+              <p style={{color:'black'}}>Youtube Subscribers</p>
             </div>
           </div>
         </div>

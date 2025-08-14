@@ -30,32 +30,32 @@ const Home = () => {
             <img src={home} alt="" className="home-image" />
           </div>
         </div>
-        <div className="stats-container">
-          <div className="registered">
-            <div className="text">
-              <h1>50+</h1>
-              <p>Registered Companies</p>
+        <div className="statistics-container">
+          <div className="home-registered">
+            <div className="home-text">
+              <h1 style={{color:'black'}}>50+</h1>
+              <p style={{color:'black'}}>Registered Companies</p>
             </div>
-            <div className="line"></div>
+            <div className="home-line"></div>
           </div>
-          <div className="registered">
-            <div className="text">
-              <h1>100,000+</h1>
-              <p>Happy Clients</p>
+          <div className="home-registered">
+            <div className="home-text">
+              <h1 style={{color:'black'}}>100,000+</h1>
+              <p style={{color:'black'}}>Happy Clients</p>
             </div>
-            <div className="line"></div>
+            <div className="home-line"></div>
           </div>
-          <div className="registered">
-            <div className="text">
-              <h1>500+</h1>
-              <p>Well Known Developers</p>
+          <div className="home-registered">
+            <div className="home-text">
+              <h1 style={{color:'black'}}>500+</h1>
+              <p style={{color:'black'}}>Well Known Developers</p>
             </div>
-            <div className="line"></div>
+            <div className="home-line"></div>
           </div>
-          <div className="registered">
-            <div className="text">
-              <h1>24/7</h1>
-              <p>Service</p>
+          <div className="home-registered">
+            <div className="home-text">
+              <h1 style={{color:'black'}}>24/7</h1>
+              <p style={{color:'black'}}>Service</p>
             </div>
           </div>
         </div>

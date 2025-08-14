@@ -40,7 +40,7 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.stats-container{
+.stat-container{
     width: 60%;
     color: white;
     display: flex;
@@ -51,15 +51,15 @@
     align-items: center;
     height: 15vh;
 }
-.line{
+.about-line{
     width: 3px;
     height: 60px;
 background-color: black;
 }
-.registered{
+.about-registered{
     display: flex;
     gap: 30px;
 }
-.text{
+.about-text{
     font-weight: 1000;
 }
