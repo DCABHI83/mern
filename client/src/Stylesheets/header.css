@@ -1,43 +1,75 @@
-.main{
-    width: 100%;
-     
+.header {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  position: relative;
 }
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-nav{
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-  
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
 }
-.logo{
-    font-size: 1.5rem;
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s;
 }
-nav ul{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;  
+
+.nav-links a:hover {
+  color: #00bcd4;
 }
-nav ul a{
-    text-decoration: none;
-    color:white;
-    font-size: 1.5rem;
-    
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
-.disable{
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2rem 1rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+.mobile-drawer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.mobile-drawer a:hover {
+  color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
     display: none;
-}
-.show{
+  }
+  .hamburger {
     display: block;
-     text-decoration: none;
-    color:white;
-    font-size: 1.5rem;
-}
-@media(max-width:600px){
-    nav{
-        display: none;
-    }
+  }
 }
